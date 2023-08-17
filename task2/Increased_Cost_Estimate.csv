@@ -1,0 +1,29 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,12205.640000000005,146467.68,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),internal load balancer,Application Load Balancer,0,211.1,2533.20,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),external load balancer,Application Load Balancer,0,211.1,2533.20,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),web servers,Amazon EC2 ,0,2210.653869,26527.85,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 15, Peak: 50, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (a1.xlarge), Pricing strategy (On-Demand), Enable monitoring (enabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),application servers,Amazon EC2 ,0,2210.653869,26527.85,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 15, Peak: 50, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (a1.xlarge), Pricing strategy (On-Demand), Enable monitoring (enabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),rds master db AZ1,Amazon RDS for PostgreSQL,0,1519.7999999999997,18237.60,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB), Nodes (1), Instance Type (db.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1000 per month)"
+My Estimate,US East (N. Virginia),rds read replicas db AZ2,Amazon RDS for PostgreSQL,0,1519.7999999999997,18237.60,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB), Nodes (1), Instance Type (db.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1000 per month)"
+My Estimate,US East (N. Virginia),vpc,VPN Connection,0,0,0.00,USD,,Working days per month (22)
+My Estimate,US East (N. Virginia),vpc,Network Address Translation (NAT) Gateway,0,32.89,394.68,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),s3 bucket,S3 Standard,0,1177.6,14131.20,USD,,S3 Standard storage (50 TB per month)
+My Estimate,US East (N. Virginia),s3 bucket,S3 Standard - Infrequent Access,0,640,7680.00,USD,,S3 Standard-IA storage (50 TB per month)
+My Estimate,US East (N. Virginia),s3 bucket,S3 Glacier Deep Archive,0,51.36,616.32,USD,,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (50 TB per month)"
+My Estimate,US East (N. Virginia),s3 bucket,S3 Glacier Instant Retrieval,0,204.8,2457.60,USD,,S3 Glacier Instant Retrieval storage (50 TB per month)
+My Estimate,US East (N. Virginia),s3 bucket,Data Transfer,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,15,180.00,USD,,Number of requests (HTTPS) (15000000 per month)
+My Estimate,US East (N. Virginia),ElastiCache cluster,Amazon ElastiCache,0,681.09,8173.08,USD,,"Nodes (3), Instance type (cache.m5.xlarge), Cache Engine (Redis), Utilization (On-Demand only) (100 %Utilized/Month), Cache Node Type (Standard), Pricing strategy (OnDemand), Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),rds read replicas db AZ3,Amazon RDS for PostgreSQL,0,1519.7999999999997,18237.60,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB), Nodes (1), Instance Type (db.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1000 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.95)"
+
+Changes made: Added third availibility zone AZ3 ; Added one more rds db read replicas in AZ3 ;Added ElastiCache to improve read performance and reduce database load ; improve S3 Standard ,S3 Infrequent Access,S3 Glacier and S3 Glacier Instant Retrieval storage.
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
